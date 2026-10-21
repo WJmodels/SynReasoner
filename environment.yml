@@ -1,0 +1,39 @@
+name: synreasoner
+channels:
+  - nvidia/label/cuda-12.4.0
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - cuda-toolkit=12.4
+  - cudnn
+  - pip:
+      # Core version pinning
+      - unsloth==2025.10.10
+      - unsloth-zoo==2025.10.12
+      - torch==2.8.0
+      - torchvision==0.23.0
+      - torchaudio==2.8.0
+      - xformers==0.0.32.post1
+      - triton==3.4.0
+      - vllm==0.11.0
+      - bitsandbytes==0.48.1
+      - cut-cross-entropy==25.1.1
+      
+      # Key dependencies
+      - transformers==4.56.2
+      - datasets==4.3.0
+      - accelerate==1.11.0
+      - peft==0.17.1
+      - trl==0.23.0
+      
+      # Other commonly used components
+      - numpy==2.2.6
+      - pandas==2.3.3
+      - sentencepiece==0.2.1
+      - protobuf==6.33.0
+      - hf-transfer==0.1.9
+      - wandb==0.17.9
+      - rdkit>=2024.3

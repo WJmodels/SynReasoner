@@ -1,0 +1,45 @@
+# Python and packaging
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+dist/
+
+# Experiment outputs, weights, logs, and caches
+runs/
+outputs/
+validation/
+final_model/
+checkpoint-*/
+training_logs/
+wandb/
+wandb_offline/
+*.log
+events.out.tfevents*
+hf_cache/
+.cache/
+temp/
+unsloth_compiled_cache/
+_unsloth_temporary_saved_buffers/
+*.safetensors
+pytorch_model*.bin
+optimizer*.pt
+scheduler.pt
+rng_state*.pth
+training_args.bin
+
+# Generated predictions, metrics, and run records
+predictions*.jsonl
+predictions*.txt
+predictions*.partial.jsonl
+metrics.json
+validation.json
+progress.json
+trainer_state.json
+train_results.json
+all_results.json
+migration.json
+comparison.json
+COMPARISON.md

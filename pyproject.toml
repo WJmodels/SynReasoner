@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "synreasoner"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.8", "transformers>=4.56", "datasets>=4.3", "rdkit", "pandas", "tqdm", "accelerate"]
+[project.scripts]
+synreasoner = "test:main"
+synreasoner-train = "train:main"
+[tool.setuptools]
+py-modules = ["test", "train"]

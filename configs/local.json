@@ -1,0 +1,9 @@
+{
+  "data": "/path/to/arrow_dataset",
+  "model": "/path/to/checkpoint",
+  "output": "runs/inference",
+  "limit": 3,
+  "max_tokens": 5000,
+  "backend": "transformers",
+  "device": "cuda:0"
+}
